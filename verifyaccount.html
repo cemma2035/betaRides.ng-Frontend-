@@ -44,28 +44,22 @@
 
             </div>
         </nav>
-        <div class="row h-25 m-auto justify-content-center mt-5 ">
+        <div class="row  mx-auto justify-content-center mt-5 ">
             <div class="col-lg-4 login">
                 <form id="login">
-                    <h4>Login To your account</h4>
+                    <h4>Verify Your account</h4>
 
 
                     <div class="form-group">
-                        <input type="email" class="form-control" id="email" placeholder="Email Address..." onchange="checkEmail()">
-                        <div id="emailError"></div>
+                        <input type="text" class="form-control" id="verification" placeholder="Enter the verification code sent to your email here">
+
                     </div>
 
-                    <div class="form-group">
-                        <input type="password" class="form-control" id="password" placeholder="Password..." onchange="checkPassword()">
-                        <div id="passwordError"></div>
-                    </div>
-                    <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="rememberme">
-                        <label class="form-check-label text-light pl-4" for="rememberme">Stay Logged in</label>
-                    </div>
 
-                    <button type="submit" id="loginBtn" class="btn primary w-100 mb-3" disabled>Login</button>
-                    <button type="submit" class="btn red w-100 ">Login with Google</button>
+
+
+                    <button type="submit" id="verifyBtn" class="btn primary w-100 mb-3" disabled>Verify</button>
+
                 </form>
 
 
@@ -88,7 +82,7 @@
 
 
 </body>
-<script src="js/login.js"></script>
+
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </html>
