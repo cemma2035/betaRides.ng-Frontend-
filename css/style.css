@@ -133,8 +133,6 @@ body {
     background-image: url("https://res.cloudinary.com/oluwamayowaf/image/upload/v1572116802/Betarides/Signup-bg_iqhyrf.svg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 100vh;
 }
 
@@ -167,13 +165,27 @@ body {
     padding: 1em;
 }
 
+#nameError {
+    color: #EB5757;
+}
+
+#emailError {
+    color: #EB5757;
+}
+
+#phoneError {
+    color: #EB5757;
+}
+
+#passwordError {
+    color: #EB5757;
+}
+
 
 /*********************login style *******************************/
 
 .login-bg {
     background-image: url("https://res.cloudinary.com/oluwamayowaf/image/upload/v1572116802/Betarides/Signup-bg_iqhyrf.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -187,9 +199,6 @@ body {
     font-size: 18px;
     line-height: 27px;
     /* identical to box height */
-    display: flex;
-    align-items: center;
-    text-align: center;
     text-transform: capitalize;
 }
 
@@ -206,6 +215,51 @@ body {
     background: #1B1B1B;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.7);
     padding: 1em;
+}
+
+
+/***************Styling for Select account type page *********************/
+
+.select-bg {
+    background-image: url("https://res.cloudinary.com/oluwamayowaf/image/upload/v1572124976/Betarides/Acc_type_bg_jzviwi.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.select-img {
+    background-image: url("https://res.cloudinary.com/oluwamayowaf/image/upload/v1572133397/Betarides/2792817_wrjgjz.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100px;
+    height: 100px;
+    background-color: #1B1B1B;
+}
+
+.select-acc h4 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.select-acc h3 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 45px;
+}
+
+.select-acc p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
 }
 
 

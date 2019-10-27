@@ -9,7 +9,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/style.css">
-    <script src="js/signup.js"></script>
+
     <title>BetaRides.ng</title>
 
 </head>
@@ -49,20 +49,20 @@
                 <form id="signup">
                     <h4>Create an account</h4>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="fullname" placeholder="Full Name..." onblur="checkName()">
+                        <input type="text" class="form-control" id="fullname" placeholder="Full Name..." onchange="checkName()">
                         <div id="nameError"></div>
                     </div>
 
                     <div class="form-group">
-                        <input type="email" class="form-control" id="email" placeholder="Email">
+                        <input type="email" class="form-control" id="email" placeholder="Email" onchange="checkEmail()">
                         <div id="emailError"></div>
                     </div>
                     <div class="form-group">
-                        <input type="number" class="form-control" id="phone" placeholder="Phone">
+                        <input type="number" class="form-control" id="phone" placeholder="Phone" onchange="checkPhone()">
                         <div id="phoneError"></div>
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control" id="password" placeholder="Password">
+                        <input type="password" class="form-control" id="password" placeholder="Password" onchange="checkPassword()">
                         <div id="passwordError"></div>
                     </div>
                     <div class="form-group text-light">
@@ -70,7 +70,7 @@
                     </div>
 
                     <button type="submit" id="signupBtn" class="btn primary w-100 mb-3" disabled>Sign Up</button>
-                    <button type="submit" class="btn red w-100 mb-3">Sign Up with Google</button>
+                    <button class="btn red w-100 mb-3">Sign Up with Google</button>
                 </form>
 
 
@@ -93,5 +93,6 @@
 
 
 </body>
+<script src="js/signup.js"></script>
 
 </html>
