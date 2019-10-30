@@ -38,12 +38,12 @@ const validateSignForm = (signupForm_1) => {
         emailError.style.visibility = 'visible';
         return false;
     }else 
-    // //Check Phone number
-    // if (!testNum.test(phone)) {
-    //     phoneError.textContent      = 'Please enter a valid phone number';
-    //     phoneError.style.visibility = 'visible';
-    //     return false;
-    // }else 
+    //Check Phone number
+    if (!testNum.test(phone)) {
+        phoneError.textContent      = 'Please enter a valid phone number';
+        phoneError.style.visibility = 'visible';
+        return false;
+    }else 
     //Check Password
     if (password.length < 8) {
         passwordError.textContent      = 'Password must be a minimum of 8 characters';
