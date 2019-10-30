@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/global.css">
 
 
-    <title>BetaRides.ng</title>
+    <title>BetaRides.ng | Account Type</title>
 
 </head>
 
@@ -46,52 +46,41 @@
             </div>
         </nav>
         <div class="row h-50 mx-auto justify-content-center ">
-            <div class="col text-white my-auto ">
-                <div class="row" id="select-owner" onclick="carOwners()">
+            <div class="col text-white my-auto">
+                <div class="row" id="select-owner" style="cursor: pointer;" onclick="carOwners()">
                     <div class="col-2 sm-hide select-img rounded-circle "></div>
                     <div class="col-10 pb-2">
                         <h4>Car Owners</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </div>
-                <div class="row pt-4" id="select-renter" onclick="carRenters()">
+                <div class="row pt-4" id="select-renter" style="cursor: pointer;" onclick="carRenters()">
                     <div class="col-2 sm-hide select-img rounded-circle "></div>
                     <div class="col-10 ">
                         <h4>Renters</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </div>
-                <button class="btn gradient mt-4" id="select-btn" disabled>Select</button>
-
-
-
+                <a class="google">
+                    <button data-signup-form-2 class="btn gradient mt-4" id="select-btn">
+                        Sign Up
+                    </button>
+                </a>
+                <div data-selection-warning class="selection_warning" id="passwordError">Please select an account type to complete account!</div>
             </div>
             <div class="col text-light text-lg-right my-auto  ">
                 <h3> Choose Your Account Type</h3>
                 <p class="ml-lg-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
                 <button class="btn gradient mt-5 ">Help</button>
-
             </div>
-
-
-
         </div>
-
-
-
     </div>
-
-    <footer class="m-auto">
-        <a class="center d-lg-inline " href="index.html">
-            <img src="https://res.cloudinary.com/oluwamayowaf/image/upload/v1572000999/Betarides/brand_iedick.svg" alt="logo">
-        </a>
-
-
-    </footer>
-
-
 </body>
-<script src="js/selectaccount.js"></script>
+<script src="js/general/third_party_cdn.js"></script>
+<script src="js/general/placeholder.js"></script>
+<script src="js/general/base_url.js"></script>
+<script src="js/validation/selectaccount.js"></script>
+<script src="js/api/auth/select_account.js"></script>
 
 </html>

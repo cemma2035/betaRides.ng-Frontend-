@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+        <link type="text/css" rel="stylesheet" href="css/global.css">
+        <link type="text/css" rel="stylesheet" href="css/login.css">
+
+        <title>BetaRides.ng</title>
+
+    </head>
+
+    <body>
+        <div class="container-fluid login-bg">
+
+            <nav class="navbar navbar-expand-lg  navbar-blue bg-transparent ">
+                <a class="navbar-brand" href="index.html">
+                    <img src="https://res.cloudinary.com/oluwamayowaf/image/upload/v1572000999/Betarides/brand_iedick.svg" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto ">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Home </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item ">
+
+                            <a href="signup.html" class="custom-btn"> <button class="btn primary" type="submit">Sign Up</button></a>
+
+
+                        </li>
+
+                    </ul>
+
+                </div>
+            </nav>
+            <div class="row h-25 m-auto justify-content-center mt-5 ">
+                <div class="col-lg-4 login">
+                    <form id="login">
+                        <h4>Login To your account</h4>
+
+
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Email Address..." onchange="checkEmail()">
+                            <div id="emailError"></div>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="password" placeholder="Password..." onchange="checkPassword()">
+                            <div id="passwordError"></div>
+                        </div>
+                        <div class="form-group form-check">
+                            <input type="checkbox" class="form-check-input" id="rememberme">
+                            <label class="form-check-label text-light pl-4" for="rememberme">Stay Logged in</label>
+                        </div>
+
+                        <button type="submit" id="signupBtn" class="btn primary w-100">
+                            Continue
+                        </button>
+                        <button class="btn w-100 mt-2 custom-btn"><img width="20" height="20" src="images/google.svg"> Sign
+                            in with Google</button>
+                    </form>
+
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+        <script src="js/general/third_party_cdn.js"></script>
+        <script src="js/validation/login.js"></script>
+        <script src="js/api/base_url.js"></script>
+        <script src="js/api/auth/login.js"></script>
+    </body>
+</html>

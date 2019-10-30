@@ -7,6 +7,7 @@
 body {
     background-color: black;
     width: 100%;
+    color: white;
 }
 
 
@@ -41,9 +42,14 @@ body {
     line-height: 21px;
     border: none;
     background: linear-gradient(152.88deg, #5F9DFA 0%, #C22ED0 100%);
-    color: white;
+    color: white !important;
 }
-
+.gradient:focus {
+    color: white !important;
+}
+.gradient:hover {
+    background: linear-gradient(152.88deg, #C22ED0 0%,  #5F9DFA 100%);
+}
 .gradient-outline {
     width: 152px;
     height: 40px;
@@ -54,11 +60,19 @@ body {
     background: linear-gradient(152.88deg, #5F9DFA 0%, #C22ED0 100%);
     color: white;
 }
-
+.gradient-outline:hover {
+    background: linear-gradient(152.88deg, #C22ED0 0%,  #5F9DFA 100%);
+}
 .primary {
     background: linear-gradient(152.88deg, #5F9DFA 0%, #C22ED0 100%) !important;
     border: none;
     color: white;
+    transition: background 0.5s ease;
+}
+.primary:hover {
+    background: linear-gradient(152.88deg, #C22ED0 0%,  #5F9DFA 100%) !important;
+    color: white;
+    /* transform: scale(0.003); */
 }
 
 .red {
@@ -126,62 +140,6 @@ body {
     padding: 10% 5%;
 }
 
-
-/*********************Sign Up style *******************************/
-
-.signup-bg {
-    background-image: url("https://res.cloudinary.com/oluwamayowaf/image/upload/v1572116802/Betarides/Signup-bg_iqhyrf.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-}
-
-#signup h4 {
-    color: #5A5A5A;
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 27px;
-    /* identical to box height */
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-transform: capitalize;
-}
-
-#signup p {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 13px;
-    line-height: 18px;
-    color: #F4F4F4;
-}
-
-.signup {
-    background: #1B1B1B;
-    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.7);
-    padding: 1em;
-}
-
-#nameError {
-    color: #EB5757;
-}
-
-#emailError {
-    color: #EB5757;
-}
-
-#phoneError {
-    color: #EB5757;
-}
-
-#passwordError {
-    color: #EB5757;
-}
-
-
 /*********************login style *******************************/
 
 .login-bg {
@@ -192,7 +150,7 @@ body {
 }
 
 #login h4 {
-    color: #5A5A5A;
+    color: #F4F4F4;
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;

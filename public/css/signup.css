@@ -1,0 +1,44 @@
+/*********************Sign Up style *******************************/
+
+.signup-bg {
+    background-image: url("https://res.cloudinary.com/oluwamayowaf/image/upload/v1572116802/Betarides/Signup-bg_iqhyrf.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#signup h4 {
+    color: #F4F4F4;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#signup p {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    color: #F4F4F4;
+}
+
+.signup {
+    background: #1B1B1B;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.7);
+    padding: 1em;
+}
+
+.signup_error {
+    color: #EB5757;
+    font-size: 10px;
+    height: 0.5px;
+    visibility: hidden;
+}

@@ -1,0 +1,27 @@
+
+.custom-btn {
+    color: #F4F4F4;
+    border-width: 3px;
+    border-style: solid;
+    border-image: 
+        linear-gradient(
+        to bottom, 
+        tomato, 
+        rgba(0, 0, 0, 0)
+        ) 1 100%;
+    border-image-slice: 30%;
+}
+
+.custom-btn:hover  {
+    color: #F4F4F4;
+}
+
+.custom-btn:hover button  {
+    color: #F4F4F4;
+}
+.btn-preloder {
+    color:white; 
+}
+.selection_warning {
+    color:#EB5757;
+}
