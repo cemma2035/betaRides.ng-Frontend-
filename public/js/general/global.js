@@ -3,7 +3,7 @@ $.ajaxSetup({
         401: function () {
             // Redirec the to the login page.
             localStorage.removeItem('betaRide-user');
-            location.href = "../login.html";
+            location.href = "../../login.html";
         }
     }
 });

@@ -24,30 +24,34 @@ const validateSignForm = (signupForm_1) => {
     const password  = formData.get('password');
 
     const testEmail  = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    const testNum   = /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/;
+    const testNum    = /^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$/;
 
     //Fullname Check
     if (name.length < 2) {
         nameError.textContent       = "Please Enter your name";
         nameError.style.visibility  = 'visible';
+        permit = false;
         return false;
     }else 
     //Check Email
     if (!testEmail.test(String(email).toLowerCase())) {
         emailError.textContent      = 'Please enter a valid email address';
         emailError.style.visibility = 'visible';
+        permit = false;
         return false;
     }else 
     //Check Phone number
     if (!testNum.test(phone)) {
         phoneError.textContent      = 'Please enter a valid phone number';
         phoneError.style.visibility = 'visible';
+        permit = false;
         return false;
     }else 
     //Check Password
     if (password.length < 8) {
         passwordError.textContent      = 'Password must be a minimum of 8 characters';
         passwordError.style.visibility = 'visible';
+        permit = false;
         return false;
     }else {
         permit = true;

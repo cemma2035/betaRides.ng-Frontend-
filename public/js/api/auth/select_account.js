@@ -1,8 +1,5 @@
-
-
 const signupFinish = (event) => {
     event.preventDefault();
-    console.log(event);
     let url;
     //Validate account type
     url = validateSelect(url)
@@ -10,7 +7,6 @@ const signupFinish = (event) => {
         return false;
     }
 
-    console.log(url)
     //Get the signUp button from the event
     let btn = event.target;
     btn.innerHTML = `<span class="spinner-border spinner-border-sm btn-preloder" role="status" aria-hidden="true"></span>`;
@@ -42,7 +38,7 @@ const signupFinish = (event) => {
             flashAlert(title,result);
         }
         if(status == 501) {
-            title  = 'Process Implemented';
+            title  = 'Process Not Implemented';
             result = 'proceess was not implement, this could be to unavailable network coverage, please try again or contact support!!';
             flashAlert(title,result);
         }
@@ -77,6 +73,7 @@ const signupFinish = (event) => {
     .catch(err => {
         btn.innerHTML = `Sign Up`;
         console.error(err);
+        validateResponse(err);
     })
 }
 

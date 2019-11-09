@@ -1,8 +1,6 @@
 //Redirect if not from sign up page
 const signup_tracker = localStorage.getItem('signup_tracker');
-console.log(signup_tracker)
-if(!signup_tracker == 1) {
-    console.log('kk')
+if(signup_tracker != 1) {
     location.replace('signup.html');
 }
 
