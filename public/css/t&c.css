@@ -1,0 +1,120 @@
+.main-body{
+	min-height:100vh;
+}
+.background-img{
+	height: 100vh;
+	background: url("../images/Rectangle 40.svg");
+	background-position:0% 0%;
+	background-size: cover;
+	position:absolute;
+	width: 100%;
+	background-repeat: no-repeat;
+}
+
+/*navbar styling*/
+.nav-bar{
+	height:10vh;
+}
+.navbar a{
+    color:#5F9DFA !important;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+}
+.brand-name{
+	height:8vh;
+}
+.brand-name img{
+	height:100%;
+	width:100%;
+}
+.nav-item .btn-primary{
+	background:linear-gradient(163.9deg, #5F9DFA 16.72%, #4484E5 83.87%);
+}
+
+/*main body styling*/
+.body-box{
+	height:85vh;
+	border-radius:5px;
+}
+
+/*sidebar styling*/
+.terms-condition-box{
+	height:100%;
+	border-radius: 5px 0px 0px 5px;
+	background: linear-gradient(105.35deg, #5F9DFA 16.72%, #4484E5 83.87%);
+}
+.terms-and-condition{
+	height:10vh;
+	border-radius: 5px 0px 0px 0px;
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.terms-and-condition p{
+	font-family: Poppins, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 17px;
+	line-height: 21px;
+	color: #FFFFFF;
+	margin-top:3vh;
+}
+.terms-use{
+	height:10vh;
+}
+.terms-use p{
+	color:#fff;
+	font-family: Poppins, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+}
+.private-policy-sideBar{
+	height:10vh;
+	border-left:3px solid #fff;
+}
+.private-policy-sideBar p{
+	color:#fff;
+	font-style: normal;
+	font-family: Poppins, sans-serif;
+	font-weight: normal;
+}
+.legacy-statement{
+	height:10vh;
+}
+.legacy-statement p{
+	color:#fff;
+	font-weight: normal;
+	font-style: normal;
+	font-family: Poppins, sans-serif;
+}
+
+/*private policy styling*/
+.policy-box{
+	height:100%;
+	background:#fff;
+	border-radius: 0px 5px 5px 0px;
+}
+.private-policy{
+	min-height:6vh;
+}
+.private-policy h1{
+	font-size: 18px;
+	color: #3C3C3C;
+	font-family: Poppins, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 27px;
+}
+.written-policy-box{
+	height:74vh;
+}
+.read-policy{
+	height:68vh;
+}
+.read-policy p{
+	font-family: Poppins, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 21px;
+	color: #494949;
+}
