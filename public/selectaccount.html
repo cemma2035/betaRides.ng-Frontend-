@@ -17,34 +17,35 @@
 
 <body>
     <div class="container-fluid select-bg select-acc">
+      <nav class="navbar navbar-expand-lg  navbar-blue bg-transparent ">
+          <a class="navbar-brand" href="index.html">
+              <img src="images/brand (1).svg">
+          </a>
 
-        <nav class="navbar navbar-expand-lg  navbar-blue bg-transparent ">
-            <a class="navbar-brand" href="index.html">
-                <img src="https://res.cloudinary.com/oluwamayowaf/image/upload/v1572000999/Betarides/brand_iedick.svg" alt="logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                              <span class="navbar-toggler-icon"></span>
-                            </button>
+          <img src="images/menu.png" class="navbar-toggler"
+                  style="cursor: pointer;" data-toggle="collapse"
+                  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                  aria-expanded="false" aria-label="Toggle navigation">
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto ">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item ">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto ">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="index.html">Home </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="services.html">Services</a>
+                  </li>
+                  <li class="nav-item format-nav">
+                      <a href="login.html"> <button class="btn primary" type="submit">Login</button></a>
+                  </li>
 
-                        <a href="login.html"> <button class="btn primary" type="submit">Login</button></a>
+              </ul>
 
-
-                    </li>
-
-                </ul>
-
-            </div>
-        </nav>
+          </div>
+      </nav>
         <div class="row h-50 mx-auto justify-content-center ">
             <div class="col text-white my-auto">
                 <div class="row" id="select-owner" style="cursor: pointer;" onclick="carOwners()">
@@ -62,7 +63,7 @@
                     </div>
                 </div>
                 <a class="google">
-                    <button data-signup-form-2 class="btn gradient mt-4" id="select-btn">
+                    <button data-signup-form-2 class="btn gradient mt-4 btn_animate" id="select-btn">
                         Sign Up
                     </button>
                 </a>
@@ -72,14 +73,14 @@
                 <h3> Choose Your Account Type</h3>
                 <p class="ml-lg-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
-                <button class="btn gradient mt-5 ">Help</button>
+                <button class="btn gradient mt-5 btn_animate">Help</button>
             </div>
         </div>
     </div>
 </body>
 <script src="js/general/third_party_cdn.js"></script>
 <script src="js/general/placeholder.js"></script>
-<script src="js/general/base_url.js"></script>
+<script src="js/general/routes.js"></script>
 <script src="js/validation/auth/selectaccount.js"></script>
 <script src="js/api/auth/select_account.js"></script>
 

@@ -18,42 +18,41 @@
 
 <body>
     <div class="container-fluid signup-bg">
+      <nav class="navbar navbar-expand-lg  navbar-blue bg-transparent ">
+          <a class="navbar-brand" href="index.html">
+              <img src="images/brand (1).svg">
+          </a>
 
-        <nav class="navbar navbar-expand-lg  navbar-blue bg-transparent ">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/brand (1).svg">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+          <img src="images/menu.png" class="navbar-toggler"
+                  style="cursor: pointer;" data-toggle="collapse"
+                  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                  aria-expanded="false" aria-label="Toggle navigation">
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto ">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto ">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="index.html">Home </a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="services.html">Services</a>
+                  </li>
+                  <li class="nav-item format-nav">
+                      <a href="login.html"> <button class="btn primary" type="submit">Login</button></a>
+                  </li>
 
-                        <a href="login.html"><button class="btn primary"
-                                type="submit">Login</button></a>
+              </ul>
 
-
-                    </li>
-
-                </ul>
-
-            </div>
-        </nav>
+          </div>
+      </nav>
         <div class="row h-50 m-auto justify-content-center ">
             <div class="col-lg-4 col-md-6 col-sm-8 col-10  signup">
                 <form class="" data-signup-form-1 id="signup">
                     <h4>Create an account</h4>
                     <div class="form-group">
-                        <input type="text" class="form-control" name="name" id="fullname" placeholder="Full Name...">
+                        <input type="text" class="form-control"  name="name" id="fullname" placeholder="Full Name...">
                         <div class="signup_error" id="nameError"></div>
                     </div>
 
@@ -62,11 +61,11 @@
                         <div class="signup_error" id="emailError"></div>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone">
+                        <input type="text" class="form-control"  name="phone" id="phone" placeholder="Phone">
                         <div class="signup_error" id="phoneError"></div>
                     </div>
                     <div class="form-group">
-                        <input type="password" class="form-control" name="password" id="password"
+                        <input type="password" class="form-control"  name="password" id="password"
                             placeholder="Password">
                         <div class="signup_error" id="passwordError"></div>
                     </div>
@@ -75,7 +74,7 @@
                                 conditions</a> as well as our <a href="privacy_policy.html"
                                 style="color: tomato;">privacy policy</a></p>
                     </div>
-                    <button type="submit" id="signupBtn" class="btn primary w-100">
+                    <button type="submit" id="signupBtn" class="btn primary w-100  btn_animate">
                         Continue
                     </button>
                     <button class="btn w-100 mt-2 custom-btn"><img width="20" height="20" src="images/google.svg"> Sign
@@ -91,7 +90,7 @@
 </body>
 <script src="js/general/third_party_cdn.js"></script>
 <script src="js/general/placeholder.js"></script>
-<script src="js/general/base_url.js"></script>
+<script src="js/general/routes.js"></script>
 <script src="js/validation/auth/signup.js"></script>
 <script src="js/api/auth/sign_up.js"></script>
 

@@ -21,9 +21,11 @@
                 <a class="navbar-brand" href="index.html">
                     <img src="images/brand (1).svg">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
-                                </button>
+
+                <img src="images/menu.png" class="navbar-toggler"
+                        style="cursor: pointer;" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto ">
@@ -31,55 +33,55 @@
                             <a class="nav-link" href="index.html">Home </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
+                            <a class="nav-link" href="about.html">About</a>
                         </li>
-                        <li class="nav-item ">
-
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">Services</a>
+                        </li>
+                        <li class="nav-item format-nav">
                             <a href="signup.html"> <button class="btn primary" type="submit">Sign Up</button></a>
-
-
                         </li>
 
                     </ul>
 
                 </div>
             </nav>
-            <div class="row h-25 m-auto justify-content-center mt-5 ">
-                <div class="col-lg-4 login">
+            <div class="row h-55 m-auto justify-content-center mt-5 ">
+                <div class="col-lg-4 col-md-6 login mt-5">
                     <form id="login" data-login-form>
                         <h4>Login To your account</h4>
                         <div class="form-group">
                             <input type="email" name="email" class="form-control" id="email" placeholder="Email Address...">
-                            <div class="signup_error" id="nameError"></div>
+                            <div class="signup_error" id="emailError"></div>
                         </div>
 
                         <div class="form-group">
                             <input type="password" name="password" class="form-control" id="password" placeholder="Password...">
                         </div>
                         <div class="form-group form-check">
-                            <input type="checkbox" name="remember-me" value="1" class="form-check-input" id="rememberme">
+                            <input type="checkbox" name="remember-me" class="form-check-input" id="keepLogIn">
                             <label class="form-check-label text-light pl-4" for="rememberme">Stay Logged in</label>
                         </div>
 
-                        <button type="submit" id="signupBtn" class="btn primary w-100">
+                        <button type="submit" id="signupBtn" class="btn primary w-100 btn_animate">
                             Login
                         </button>
                         <button class="btn w-100 mt-2 custom-btn"><img width="20" height="20" src="images/google.svg"> Sign
                             in with Google</button>
                     </form>
-
-
                 </div>
-
 
             </div>
 
-
+                <div class="col-12 row h-20 m-auto justify-content-center assist_path">
+                    <a href="forgotpassword.html"><p class="transition_btn">Forgot Password </p></a>
+                    <a href="verifyaccount.html"><p class="transition_btn"> Verify Account</p></a>
+                </div>
 
         </div>
         <script src="js/general/third_party_cdn.js"></script>
         <script src="js/validation/auth/login.js"></script>
-        <script src="js/api/base_url.js"></script>
+        <script src="js/general/routes.js"></script>
         <script src="js/api/auth/login.js"></script>
     </body>
 </html>

@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/dashboard-sidebar.css" />
     <link rel="stylesheet" href="../css/dashboard.css" />
-    <title data-title>Beta Rides</title>
+    <title data-title>Beta Rides Dashboard</title>
+    <script src="../js/general/on_session.js"></script>
+   
 </head>
 
 <body>
@@ -35,6 +37,9 @@
                 <li class="mt-4">
                     <a href=""><i class="fa fas mr-3 fa-cogs"></i>Settings</a>
                 </li>
+                <li class="mt-4" data-logout>
+                    <a href="" style="color: red"><i class="fa fas mr-3 fa-sign-out" style="color:red"></i>Logout</a>
+                </li>
             </ul>
         </nav>
 
@@ -43,6 +48,12 @@
             <button type="button" id="sidebarCollapse" class="btn sidebar-btn p-1 mt-2 ml-2">
                 <i class="fas fa fa-align-left"></i>
             </button>
+            <div class="col-8 onsession_block">
+               <p class="onsession_name mt-2" data-onsession-name></p>
+               <p class="onsession_email" data-onsession-email style="font-weight: bold;">Account Type: 
+                <span data-onsession_account-type></span>
+               </p>
+            </div>
             <div class="col-12 row mx-0 search-map px-0">
                 <div class="col-12 col-md-7 search-con">
                     <div class="col-12 search-cars scroller mt-2 px-0">
@@ -164,8 +175,10 @@
     </div>
 </body>
 <!--Import third party cdn-->
+<script defer src="../js/DOM-Manipulation/dashboard.js"></script>
 <script src="../js/general/third_party_cdn.js"></script>
 <script src="../js/general/placeholder.js"></script>
+<script src="../js/general/routes.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
         $("#sidebarCollapse").on("click", function () {
@@ -173,5 +186,6 @@
         });
     });
 </script>
+<script src="../js/api/auth/logout.js"></script>
 
 </html>

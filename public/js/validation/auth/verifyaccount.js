@@ -2,26 +2,37 @@
 //Get the Login form 
 const verifyForm   = document.querySelector('[data-verify-form]');
 //Get the error field
-let emailError    = document.querySelector('#emailError');
+let verify_code_err    = document.querySelector('#verify_code_err');
 
 let permit = false;
 
 const validateForm = (verifyForm) => {
     //Clear the error field 
-    emailError.innerHTML = '';
-    const testEmail  = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    verify_code_err.innerHTML = '';
+    const testNum    = /^\d+$/;
+
 
     //Convert form to formData
     const formData = new FormData(verifyForm);
     //Throw error if field is empty
-    if(formData.get('verify_code') == '') {
-        emailError.innerHTML = 'Please verify code is required!';
+    console.log(formData.get('verifycode'));
+    if(formData.get('verifycode') == '') {
+        verify_code_err.innerHTML = 'Please verify code is required!';
+        verify_code_err.style.visibility = 'visible';
         permit = false;
         return false;
     }
-    //Return error if email is invalid
-    if(!testEmail.test(String(formData.get('email')).toLowerCase())) {
-        emailError.innerHTML = 'Please email is invalid, check email and try again';
+    //Return invalid if not a number
+    if (!testNum.test(formData.get('verifycode'))) {
+        verify_code_err.innerHTML     = 'Please only digit is allowed';
+        verify_code_err.style.visibility = 'visible';
+        permit = false;
+        return false;
+    }
+    //Return error if less than 6
+    if (formData.get('verifycode').length != 6) {
+        verify_code_err.innerHTML     = 'Please verify code should be 6 only';
+        verify_code_err.style.visibility = 'visible';
         permit = false;
         return false;
     }

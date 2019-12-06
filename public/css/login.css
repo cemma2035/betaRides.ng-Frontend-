@@ -32,3 +32,16 @@
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.7);
     padding: 1em;
 }
+.assist_path p {
+ padding: 10px;
+ cursor: pointer;
+ transition: 1s all ease;
+}
+.assist_path a {
+ color: white;
+ text-decoration: none;
+}
+.assist_path p:hover {
+ color: #5F9DFA;
+ transform: scale(1.05);
+}
