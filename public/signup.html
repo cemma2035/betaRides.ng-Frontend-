@@ -11,15 +11,25 @@
     <link type="text/css" rel="stylesheet" href="css/style.css">
     <link type="text/css" rel="stylesheet" href="css/global.css">
     <link type="text/css" rel="stylesheet" href="css/signup.css">
+    <link type="text/css" rel="stylesheet" href="css/preloader.css">
 
     <title class="site_title">Sign up</title>
 
 </head>
 
 <body>
+  <div class="publicPreloader">
+     <main>
+       <div class="preloader_bg showcase_wel_preloader">
+          <div class="cornfuse_preloader fadeInContinue bounceOutContinue">
+              <img src="images/brand (1).svg">
+          </div>
+       </div>
+     </main>
+  </div>
     <div class="container-fluid signup-bg">
-      <nav class="navbar navbar-expand-lg  navbar-blue bg-transparent ">
-          <a class="navbar-brand" href="index.html">
+      <nav class="navbar navbar-expand-lg  navbar-blue bg-transparent px-0">
+          <a class="navbar-brand mr-0" href="index.html">
               <img src="images/brand (1).svg">
           </a>
 
@@ -48,7 +58,7 @@
           </div>
       </nav>
         <div class="row h-50 m-auto justify-content-center ">
-            <div class="col-lg-4 col-md-6 col-sm-8 col-10  signup">
+            <div class="col-lg-4 col-md-6 col-sm-8 col-12  signup  mt-5">
                 <form class="" data-signup-form-1 id="signup">
                     <h4>Create an account</h4>
                     <div class="form-group">
@@ -89,6 +99,9 @@
     </div>
 </body>
 <script src="js/general/third_party_cdn.js"></script>
+<!--Preloader Script-->
+<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" aria-hidden="true"></script>
+<script type="text/javascript" src="js/general/preloader.js"></script>
 <script src="js/general/placeholder.js"></script>
 <script src="js/general/routes.js"></script>
 <script src="js/validation/auth/signup.js"></script>
