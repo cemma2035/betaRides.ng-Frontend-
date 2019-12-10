@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/dashboard-sidebar.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <title data-title>Beta Rides Dashboard</title>
+    <script src="../js/general/on_session.js"></script>
+   
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar" class="active">
+            <div class="col-12 dash-logo mt-3">
+                <img class="ml-3" src="../images/logo.png" alt="" />
+            </div>
+            <ul class="list-unstyled components">
+                <li class="mt-4 current">
+                    <a href=""><i class="fa fas mr-3 fa-home"></i>Home</a>
+                </li>
+                <li class="mt-4">
+                    <a href="#"><i class="fa fas mr-3 fa-user"></i>Profile</a>
+                </li>
+                <li class="mt-4">
+                    <a href=""><i class="fa fas mr-3 fa-image"></i>Stats</a>
+                </li>
+                <li class="mt-4">
+                    <a href=""><i class="fa fas mr-3 fa-cogs"></i>Settings</a>
+                </li>
+                <li class="mt-4" data-logout>
+                    <a href="" style="color: red"><i class="fa fas mr-3 fa-sign-out" style="color:red"></i>Logout</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+            <button type="button" id="sidebarCollapse" class="btn sidebar-btn p-1 mt-2 ml-2">
+                <i class="fas fa fa-align-left"></i>
+            </button>
+            <div class="col-8 onsession_block">
+               <p class="onsession_name mt-2" data-onsession-name></p>
+               <p class="onsession_email" data-onsession-email style="font-weight: bold;">Account Type: 
+                <span data-onsession_account-type></span>
+               </p>
+            </div>
+            <div class="col-12 row mx-0 search-map px-0">
+                <div class="col-12 col-md-7 search-con">
+                    <div class="col-12 search-cars scroller mt-2 px-0">
+                        <form class="search-cars-form">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <div class="input-group-append">
+                                    <button class="btn" type="button" id=""><i class="fa fas fa-search"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                        <table class="table table-borderless">
+                            <thead>
+                                <tr class="text-center">
+                                    <th scope="col"><i class="fa fas fa-square"></i></th>
+                                    <th scope="col">Model</th>
+                                    <th scope="col">Pickup Distance</th>
+                                    <th scope="col">Amount</th>
+                                    <th scope="col">Available Time</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="text-center">
+                                    <td>
+                                        <div class="car-image">
+                                            <img src="../images/car-thumbnail.jfif" alt="">
+                                        </div>
+                                    </td>
+                                    <td>Car T400</td>
+                                    <td>10km</td>
+                                    <td>$900</td>
+                                    <td>10am - 5pm</td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>
+                                        <div class="car-image">
+                                            <img src="../images/car-thumbnail.jfif" alt="">
+                                        </div>
+                                    </td>
+                                    <td>Car T400</td>
+                                    <td>10km</td>
+                                    <td>$900</td>
+                                    <td>10am - 5pm</td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>
+                                        <div class="car-image">
+                                            <img src="../images/car-thumbnail.jfif" alt="">
+                                        </div>
+                                    </td>
+                                    <td>Car T400</td>
+                                    <td>10km</td>
+                                    <td>$900</td>
+                                    <td>10am - 5pm</td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>
+                                        <div class="car-image">
+                                            <img src="../images/car-thumbnail.jfif" alt="">
+                                        </div>
+                                    </td>
+                                    <td>Car T400</td>
+                                    <td>10km</td>
+                                    <td>$900</td>
+                                    <td>10am - 5pm</td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>
+                                        <div class="car-image">
+                                            <img src="../images/car-thumbnail.jfif" alt="">
+                                        </div>
+                                    </td>
+                                    <td>Car T400</td>
+                                    <td>10km</td>
+                                    <td>$900</td>
+                                    <td>10am - 5pm</td>
+                                </tr>
+                                <tr class="text-center">
+                                    <td>
+                                        <div class="car-image">
+                                            <img src="../images/car-thumbnail.jfif" alt="">
+                                        </div>
+                                    </td>
+                                    <td>Car T400</td>
+                                    <td>10km</td>
+                                    <td>$900</td>
+                                    <td>10am - 5pm</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination justify-content-end">
+                            <li class="page-item">
+                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true"><i
+                                        class="fa fas fa-arrow-left"></i></a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#"><i class="fa fas fa-arrow-right"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-12 col-md-5 px-0">
+                    <div class="embed-map col-12 px-0 mt-2">
+                        <iframe id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=shoprite%20ikeja&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!--Import third party cdn-->
+<script defer src="../js/DOM-Manipulation/dashboard.js"></script>
+<script src="../js/general/third_party_cdn.js"></script>
+<script src="../js/general/placeholder.js"></script>
+<script src="../js/general/routes.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#sidebarCollapse").on("click", function () {
+            $("#sidebar").toggleClass("active");
+        });
+    });
+</script>
+<script src="../js/api/auth/logout.js"></script>
+
+</html>

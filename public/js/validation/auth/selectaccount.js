@@ -32,12 +32,13 @@ const carRenters = () => {
 }
 
 const validateSelect = (url) => {
+    const routes = new Routes();
     if(accountType == 'owner') {
-        url = `${baseUrl}${signUpOwner}`;
+        url = `${ routes.api_origin }${ routes.signUpOwner }`;
         selection_warning.style.display = 'none';
         return url;
      } else if(accountType == 'renter') {
-        url = `${baseUrl}${signUpRenter}`;
+        url = `${ routes.api_origin }${ routes.signUpRenter }`;
         selection_warning.style.display = 'none';
         return url;
      }

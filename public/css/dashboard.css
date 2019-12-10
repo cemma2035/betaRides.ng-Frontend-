@@ -1,0 +1,71 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+#content {
+    background: #fcfcfc;
+}
+.search-map {
+    min-height: 93vh;
+    font-size: 12px;
+}
+
+.search-cars {
+    max-height: 85vh;
+}
+.search-cars-form {
+    background: #5F9DFA;
+    border-radius: 5px 5px 0px 0px;
+}
+.search-cars-form input {
+    background: inherit;
+    border: none;
+    font-size: 12px;
+}
+.search-cars-form input::placeholder {
+    color: white;
+}
+.search-cars-form button {
+    border: none;
+    background: inherit;
+    color: white;
+}
+.search-cars-form input:focus, .search-cars-form input:active {
+    box-shadow: none;
+    background: inherit;
+    color: white;
+}
+.car-image {
+    height: 10vh;
+    width: 10vh;
+}
+.car-image img {
+    height: 100%;
+    width: 100%;
+}
+.search-map nav {
+    background: #f1f1f1;
+}
+.search-map .page-link {
+    color: grey;
+    font-size: 12px;
+    border: none;
+    background: inherit;
+}
+.search-map thead {
+    background: #3979D9;
+    color: white;
+}
+.embed-map {
+    height: 90vh;
+}
+.embed-map iframe {
+    height: 100%;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .search-con {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

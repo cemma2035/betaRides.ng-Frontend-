@@ -1,5 +1,6 @@
 const signupFinish = (event) => {
     event.preventDefault();
+
     let url;
     //Validate account type
     url = validateSelect(url)

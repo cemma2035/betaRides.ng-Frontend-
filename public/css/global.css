@@ -1,12 +1,61 @@
+.scroller {
+    overflow-y: scroll;
+  }
+
+  .scroller::-webkit-scrollbar {
+    width: 4px;
+  }
+  .btn_animate {
+   font-weight: bold;
+   border: 1px solid #5F9DFA;
+   transition: 1s all ease;
+  }
+  .btn_animate:hover {
+   color: white;
+   background: none;
+   border: 1px solid #5F9DFA;
+   transform: scale3d(1.003);
+  }
+
+  .scroller::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    display: none;
+  }
+
+  .scroller::-webkit-scrollbar-thumb {
+    color: black;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px #343a40;
+  }
+.custom_error_view {
+    color: red;
+    font-size: 10px;
+    height: 0.5px;
+    visibility: hidden;
+}
+.onsession_block {
+  font-size: 12px;
+  margin: 0;
+  text-align: right;
+  color: grey;
+  float: right;
+  height: 7vh;
+}
+
+.onsession_block p{
+  padding: 0;
+  margin: 0;
+}
 
 .custom-btn {
     color: #F4F4F4;
     border-width: 3px;
     border-style: solid;
-    border-image: 
+    border-image:
         linear-gradient(
-        to bottom, 
-        tomato, 
+        to bottom,
+        tomato,
         rgba(0, 0, 0, 0)
         ) 1 100%;
     border-image-slice: 30%;
@@ -20,8 +69,13 @@
     color: #F4F4F4;
 }
 .btn-preloder {
-    color:white; 
+    color:white;
 }
 .selection_warning {
     color:#EB5757;
+}
+@media(max-width: 768px) {
+  .format-nav {
+    position: absolute; right: 0;
+  }
 }
