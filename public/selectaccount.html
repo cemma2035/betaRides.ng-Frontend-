@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/preloader.css">
     <link type="text/css" rel="stylesheet" href="css/style.css">
     <link type="text/css" rel="stylesheet" href="css/global.css">
 
@@ -16,9 +17,18 @@
 </head>
 
 <body>
+  <div class="publicPreloader">
+     <main>
+       <div class="preloader_bg showcase_wel_preloader">
+          <div class="cornfuse_preloader fadeInContinue bounceOutContinue">
+              <img src="images/brand (1).svg">
+          </div>
+       </div>
+     </main>
+  </div>
     <div class="container-fluid select-bg select-acc">
-      <nav class="navbar navbar-expand-lg  navbar-blue bg-transparent ">
-          <a class="navbar-brand" href="index.html">
+      <nav class="navbar navbar-expand-lg  navbar-blue bg-transparent px-0">
+          <a class="navbar-brand mr-0" href="index.html">
               <img src="images/brand (1).svg">
           </a>
 
@@ -79,6 +89,9 @@
     </div>
 </body>
 <script src="js/general/third_party_cdn.js"></script>
+<!--Preloader Script-->
+<script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" aria-hidden="true"></script>
+<script type="text/javascript" src="js/general/preloader.js"></script>
 <script src="js/general/placeholder.js"></script>
 <script src="js/general/routes.js"></script>
 <script src="js/validation/auth/selectaccount.js"></script>

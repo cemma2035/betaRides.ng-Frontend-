@@ -11,15 +11,25 @@
         <link type="text/css" rel="stylesheet" href="css/style.css">
         <link type="text/css" rel="stylesheet" href="css/global.css">
         <link type="text/css" rel="stylesheet" href="css/login.css">
+        <link type="text/css" rel="stylesheet" href="css/preloader.css">
 
         <title class="site_title">Verify Account</title>
 
     </head>
 
     <body>
+      <div class="publicPreloader">
+         <main>
+           <div class="preloader_bg showcase_wel_preloader">
+              <div class="cornfuse_preloader fadeInContinue bounceOutContinue">
+                  <img src="images/brand (1).svg">
+              </div>
+           </div>
+         </main>
+      </div>
         <div class="container-fluid login-bg">
-          <nav class="navbar navbar-expand-lg  navbar-blue bg-transparent ">
-              <a class="navbar-brand" href="index.html">
+          <nav class="navbar navbar-expand-lg  navbar-blue bg-transparent px-0">
+              <a class="navbar-brand mr-0" href="index.html">
                   <img src="images/brand (1).svg">
               </a>
 
@@ -48,7 +58,7 @@
               </div>
           </nav>
             <div class="row  mx-auto justify-content-center mt-5 ">
-                <div class="col-lg-4 login col-lg-4 col-md-6 col-sm-8 col-10">
+                <div class="col-lg-4 login col-lg-4 col-md-6 col-sm-8 col-12  mt-5">
                     <form data-verify-form id="login">
                         <h4>Verify Your account</h4>
 
@@ -71,17 +81,11 @@
 
         </div>
 
-        <footer class="m-auto">
-            <a class="center d-lg-inline " href="index.html">
-                <img src="images/brand (1).svg">
-            </a>
-
-
-        </footer>
-
-
     </body>
     <script src="js/general/third_party_cdn.js"></script>
+    <!--Preloader Script-->
+    <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" aria-hidden="true"></script>
+    <script type="text/javascript" src="js/general/preloader.js"></script>
     <script src="js/validation/auth/verifyaccount.js"></script>
     <script src="js/general/routes.js"></script>
     <script src="js/api/auth/verifyaccount.js"></script>

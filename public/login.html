@@ -9,18 +9,27 @@
         <link type="text/css" rel="stylesheet" href="css/style.css">
         <link type="text/css" rel="stylesheet" href="css/global.css">
         <link type="text/css" rel="stylesheet" href="css/login.css">
+        <link type="text/css" rel="stylesheet" href="css/preloader.css">
 
         <title>Login</title>
 
     </head>
 
     <body>
+      <div class="publicPreloader">
+         <main>
+           <div class="preloader_bg showcase_wel_preloader">
+              <div class="cornfuse_preloader fadeInContinue bounceOutContinue">
+                  <img src="images/brand (1).svg">
+              </div>
+           </div>
+         </main>
+      </div>
         <div class="container-fluid login-bg">
-
-            <nav class="navbar navbar-expand-lg  navbar-blue bg-transparent ">
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/brand (1).svg">
-                </a>
+          <nav class="navbar navbar-expand-lg  navbar-blue bg-transparent px-0">
+              <a class="navbar-brand mr-0" href="index.html">
+                  <img src="images/brand (1).svg">
+              </a>
 
                 <img src="images/menu.png" class="navbar-toggler"
                         style="cursor: pointer;" data-toggle="collapse"
@@ -47,7 +56,7 @@
                 </div>
             </nav>
             <div class="row h-55 m-auto justify-content-center mt-5 ">
-                <div class="col-lg-4 col-md-6 login mt-5">
+                <div class="col-lg-4 col-md-6 col-sm-8 col-12 login mt-5">
                     <form id="login" data-login-form>
                         <h4>Login To your account</h4>
                         <div class="form-group">
@@ -80,6 +89,9 @@
 
         </div>
         <script src="js/general/third_party_cdn.js"></script>
+        <!--Preloader Script-->
+        <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js" aria-hidden="true"></script>
+        <script type="text/javascript" src="js/general/preloader.js"></script>
         <script src="js/validation/auth/login.js"></script>
         <script src="js/general/routes.js"></script>
         <script src="js/api/auth/login.js"></script>
