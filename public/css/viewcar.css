@@ -1,0 +1,65 @@
+.viewcar-con {
+    background: #F6F6F6;
+    max-height: 90vh;
+}
+.car-owner-header {
+    min-height: 40vh;
+}
+.owner-image {
+    height: 20vh;
+    width: 20vh;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 1vh;
+    left: 8%;
+    z-index: 2;
+    border: 3px solid white;
+}
+.owner-cover-photo {
+    height: 32vh;
+}
+.owner-cover-photo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(.4);
+}
+.owner-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.util-btns {
+    position: absolute;
+    right: 0;
+    bottom: 1vh;
+}
+.util-btns button {
+    font-size: 12px;
+}
+.owner-social {
+    height: 8vh;
+}
+.social-cons {
+    height: 6vh;
+    width: 6vh;
+    border-radius: 50%;
+}
+.info-box {
+    background: white;
+}
+.indiv-info {
+    min-height: 8vh;
+    color: grey;
+}
+.indiv-info i {
+    font-size: 24px;
+    border-radius: 50%;
+}
+.indiv-info span {
+    font-size: 12px;
+}
+.primary-information h6 {
+    color: #5F9DFA;
+}

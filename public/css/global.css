@@ -74,6 +74,14 @@ input{
 .selection_warning {
     color:#EB5757;
 }
+.blue-brand-btn-reverse {
+  color: #5F9DFA;
+  background: white;
+}
+.blue-brand-btn {
+  color: white;
+  background: #5F9DFA;
+}
 @media(max-width: 768px) {
   .format-nav {
     position: absolute; right: 0;
