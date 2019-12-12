@@ -7,32 +7,50 @@ body {
 .search-map {
     min-height: 93vh;
     font-size: 12px;
+    background: #F6F6F6;
 }
 
 .search-cars {
     max-height: 85vh;
 }
-.search-cars-form {
+.search-parameters {
+    min-height: 30vh;
+    background: inherit;
+}
+.search-cars-form .search-bar {
     background: #5F9DFA;
     border-radius: 5px 5px 0px 0px;
 }
-.search-cars-form input {
+.search-cars-form .search-bar input {
     background: inherit;
     border: none;
     font-size: 12px;
 }
-.search-cars-form input::placeholder {
+.search-cars-form .search-bar input::placeholder {
     color: white;
 }
-.search-cars-form button {
+.search-cars-form .search-bar button {
     border: none;
     background: inherit;
     color: white;
 }
-.search-cars-form input:focus, .search-cars-form input:active {
+.search-cars-form .search-bar input:focus, .search-cars-form .search-bar input:active {
     box-shadow: none;
     background: inherit;
     color: white;
+}
+.search-parameters .input-group {
+}
+.search-parameters .input-group-prepend .input-group-text{
+    color: black;
+    background: white;
+    border: none;
+}
+.search-parameters input {
+    font-size: 12px;
+}
+.search-parameters input:focus {
+    box-shadow: none;
 }
 .car-image {
     height: 10vh;

@@ -38,10 +38,8 @@ input{
 }
 .onsession_block {
   font-size: 12px;
-  margin: 0;
   text-align: right;
   color: grey;
-  float: right;
   height: 7vh;
 }
 
